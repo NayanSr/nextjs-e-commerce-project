@@ -1,11 +1,14 @@
 'use client'
 import React from "react";
+import Navbar from '@/components/Navbar'
+import Footer from "@/components/Footer";
 
 
 const Home = () => {
   return (
     <>
-      <h2>Nav component</h2>
+      <h2 className="text-red-700">Nav component</h2>
+      <Navbar/>
       <div className="px-6 md:px-16 lg:px-32">
        
        <h2>Header slider if</h2>
@@ -15,7 +18,8 @@ const Home = () => {
        <h2>NewsLetest compo if</h2>
        
       </div>
-      <h2>Footer compo</h2>
+      <h2 className="text-red-700">Footer compo</h2>
+      <Footer/>
     </>
   );
 };
