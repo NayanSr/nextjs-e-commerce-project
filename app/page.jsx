@@ -2,24 +2,29 @@
 import React from "react";
 import Navbar from '@/components/Navbar'
 import Footer from "@/components/Footer";
+import HeaderSlider from "@/components/HeaderSlider";
+import HomeProducts from "@/components/HomeProducts";
+import FeaturedProduct from "@/components/FeaturedProduct";
+import Banner from "@/components/Banner";
+import NewsLetter from "@/components/NewsLetter";
 
 
 const Home = () => {
   return (
     <>
-      <h2 className="text-red-700">Nav component</h2>
-      <Navbar/>
+
+      <Navbar />
       <div className="px-6 md:px-16 lg:px-32">
-       
-       <h2>Header slider if</h2>
-       <h2>Home products here if</h2>
-        <h2>Featured component if</h2>
-        <h2>Banner component if</h2>
-       <h2>NewsLetest compo if</h2>
-       
+
+        <HeaderSlider />
+        <HomeProducts />
+        <FeaturedProduct />
+        <Banner />
+        <NewsLetter />
+
       </div>
-      <h2 className="text-red-700">Footer compo</h2>
-      <Footer/>
+
+      <Footer />
     </>
   );
 };
